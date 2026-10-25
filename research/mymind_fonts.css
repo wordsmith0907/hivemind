@@ -1,0 +1,125 @@
+﻿/* Self-hosted webfonts (files in /assets/fonts), each as WOFF2 (2026-10-19: the TTF/OTF files were converted, and rules with
+   several src lines, where the last one won, now list WOFF2 first with WOFF as the fallback). Only fonts.net (Avenir) stays external (Typekit and Google Fonts were removed on 2026-10-06; Neue Haas Grotesk Display became Maison Neue) ΓÇö see the <link> tags in each page head. */
+@font-face {
+  font-family: 'Louize-Italic-205TF';
+  src: url('/assets/fonts/Louize-Italic-205TF.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Louize-Medium-Italic-205TF';
+  src: url('/assets/fonts/Louize-Medium-Italic-205TF.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Louize-Regular-205TF';
+  src: url('/assets/fonts/Louize-Regular-205TF.woff2') format('woff2'), url('/assets/fonts/Louize-Regular-205TF.woff') format('woff');
+}
+@font-face {
+  font-family: 'Louize-Medium-205TF';
+  src: url('/assets/fonts/Louize-Medium-205TF.woff2') format('woff2'), url('/assets/fonts/Louize-Medium-205TF.woff') format('woff');
+}
+@font-face {
+  font-family: 'Louize-Bold-205TF';
+  src: url('/assets/fonts/Louize-Bold-205TF.woff2') format('woff2'), url('/assets/fonts/Louize-Bold-205TF.woff') format('woff');
+}
+@font-face {
+  font-family: 'MaisonNeue-Light';
+  src: url('/assets/fonts/MaisonNeue-Light.woff2') format('woff2'), url('/assets/fonts/MaisonNeue-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'MaisonNeue-Book';
+  src: url('/assets/fonts/MaisonNeue-Book.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url('/assets/fonts/Nunito-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url('/assets/fonts/Nunito-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MaisonNeue-Demi';
+  src: url('/assets/fonts/MaisonNeue-Demi.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MaisonNeue-Medium';
+  src: url('/assets/fonts/MaisonNeue-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'FKRomanStandard-Light';
+  src: url('/assets/fonts/FKRomanStandard-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'FKRomanStandard-Regular';
+  src: url('/assets/fonts/FKRomanStandard-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito-Medium';
+  src: url('/assets/fonts/Nunito-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'mymindai-Regular';
+  src: url('/assets/fonts/mymindai-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('/assets/fonts/Satoshi-BlackItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('/assets/fonts/Satoshi-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url('/assets/fonts/Satoshi-MediumItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/assets/fonts/Satoshi-Variable.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('/assets/fonts/Satoshi-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url('/assets/fonts/Satoshi-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('/assets/fonts/Satoshi-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('/assets/fonts/Satoshi-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('/assets/fonts/Satoshi-LightItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('/assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('/assets/fonts/Satoshi-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('/assets/fonts/Satoshi-VariableItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/inter.woff2') format('woff2');
+}

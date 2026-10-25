@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* -------------------------------------------------- */
+/* ORIGINAL MYMIND WEBFONTS (Self-hosted WOFF2)       */
+/* -------------------------------------------------- */
+@font-face {
+  font-family: 'Louize-Regular-205TF';
+  src: url('/assets/fonts/Louize-Regular-205TF.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louize-Italic-205TF';
+  src: url('/assets/fonts/Louize-Italic-205TF.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louize-Medium-205TF';
+  src: url('/assets/fonts/Louize-Medium-205TF.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louize-Bold-205TF';
+  src: url('/assets/fonts/Louize-Bold-205TF.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Book';
+  src: url('/assets/fonts/MaisonNeue-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Medium';
+  src: url('/assets/fonts/MaisonNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Demi';
+  src: url('/assets/fonts/MaisonNeue-Demi.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Light';
+  src: url('/assets/fonts/MaisonNeue-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url('/assets/fonts/Nunito-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url('/assets/fonts/Nunito-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/assets/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* -------------------------------------------------- */
+/* ORIGINAL MYMIND COLOR SYSTEM & TOKENS              */
+/* -------------------------------------------------- */
+@layer base {
+  :root {
+    --bg-main: #fbfaf8;
+    --bg-card: #ffffff;
+    --bg-card-hover: #ffffff;
+    --border-subtle: rgba(0, 0, 0, 0.05);
+    --border-hover: rgba(0, 0, 0, 0.12);
+    --text-primary: #191919;
+    --text-secondary: #748297;
+    --text-muted: #9c9994;
+    
+    /* Mymind Official Brand Signatures */
+    --accent-orange: #FF5924;      /* Signature Pulsating Dot, Buttons & Focus */
+    --accent-yellow: #FFE926;      /* Note Borders, Highlights, Warm Ochre */
+    --accent-pink: #FF7DD3;        /* Vibe Search Pill Accent */
+    --accent-green: #5CB13E;       /* Todo Checked & Copied State */
+    
+    --font-serif: 'Louize-Regular-205TF', Georgia, serif;
+    --font-serif-italic: 'Louize-Italic-205TF', 'Louize-Regular-205TF', Georgia, serif;
+    --font-serif-bold: 'Louize-Bold-205TF', Georgia, serif;
+    --font-sans: 'MaisonNeue-Book', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans-medium: 'MaisonNeue-Medium', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans-demi: 'MaisonNeue-Demi', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-button: 'Nunito-SemiBold', 'Nunito', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  .dark {
+    --bg-main: #121214;
+    --bg-card: #1c1c1f;
+    --bg-card-hover: #232327;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-hover: rgba(255, 255, 255, 0.15);
+    --text-primary: #f5f4f2;
+    --text-secondary: #a3a19d;
+    --text-muted: #6e6c68;
+    
+    --accent-orange: #FF5924;
+    --accent-yellow: #FFE926;
+    --accent-pink: #FF7DD3;
+    --accent-green: #5CB13E;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+/* -------------------------------------------------- */
+/* TYPOGRAPHY UTILITIES                               */
+/* -------------------------------------------------- */
+.font-editorial {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+.font-editorial-italic {
+  font-family: var(--font-serif-italic);
+  font-style: italic;
+  letter-spacing: -0.015em;
+}
+
+.font-editorial-bold {
+  font-family: var(--font-serif-bold);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-body {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+.font-body-medium {
+  font-family: var(--font-sans-medium);
+  letter-spacing: -0.01em;
+}
+
+.font-body-demi {
+  font-family: var(--font-sans-demi);
+  letter-spacing: -0.01em;
+}
+
+.font-btn {
+  font-family: var(--font-button);
+}
+
+.font-code {
+  font-family: var(--font-mono);
+}
+
+/* -------------------------------------------------- */
+/* FLUID MASONRY GRID                                 */
+/* -------------------------------------------------- */
+.masonry-grid {
+  columns: 1;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    columns: 3;
+    column-gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .masonry-grid {
+    columns: 4;
+    column-gap: 2rem;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.75rem;
+  transform: translateZ(0);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.masonry-item:hover {
+  transform: translateY(-3px);
+}
+
+/* -------------------------------------------------- */
+/* CARDS ELEVATION & SHADOWS                          */
+/* -------------------------------------------------- */
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.dark .card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.dark .card-shadow-hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------------------------- */
+/* FROSTED LIQUID GLASS PILL                          */
+/* Exact CSS rules from mymind lines 826-834         */
+/* -------------------------------------------------- */
+.liquid-glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.65) 100%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  backdrop-filter: blur(22px) saturate(180%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.9), 0 8px 30px rgba(116, 130, 151, 0.14);
+}
+
+.dark .liquid-glass {
+  background: linear-gradient(180deg, rgba(30, 30, 34, 0.85) 0%, rgba(22, 22, 25, 0.75) 100%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  backdrop-filter: blur(22px) saturate(180%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.05), 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+.liquid-glass-focus {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 89, 36, 0.4), 0 12px 38px rgba(255, 89, 36, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.dark .liquid-glass-focus {
+  background: #1e1e22;
+  box-shadow: inset 0 0 0 1px rgba(255, 89, 36, 0.5), 0 12px 38px rgba(0, 0, 0, 0.6);
+}
+
+/* -------------------------------------------------- */
+/* THE SIGNATURE PULSATING ORANGE DOT (#FF5924)       */
+/* -------------------------------------------------- */
+@keyframes mymind-dot-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 89, 36, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 7px rgba(255, 89, 36, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 89, 36, 0);
+  }
+}
+
+.mymind-pulse-dot {
+  background-color: #FF5924;
+  border-radius: 9999px;
+  animation: mymind-dot-pulse 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* -------------------------------------------------- */
+/* STATIONERY PAPER NOTE TINT                         */
+/* -------------------------------------------------- */
+.paper-note {
+  background-color: #fefcf3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 4px 12px rgba(220, 180, 50, 0.06);
+}
+
+.dark .paper-note {
+  background-color: #1e1d17;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.35);
+}
