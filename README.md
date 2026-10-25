@@ -1,14 +1,14 @@
-# Mymind 2.0 — The Extension of Your Mind
+# Hivemind — The Extension of Your Mind
 
-> An exquisite, local-first recreation of [mymind.com](https://mymind.com) featuring authentic typography, contextual intelligence, serendipity memory engine, and distraction-free editorial reading.
+> An exquisite, local-first intelligence engine and visual memory canvas inspired by [mymind.com](https://mymind.com), featuring authentic typography, contextual intelligence, serendipity memory engine, and distraction-free editorial reading.
 
-![Mymind Preview](research/mymind-hero.png)
+![Hivemind Preview](research/mymind-hero.png)
 
 ---
 
 ## ✨ Philosophy & Experience
 
-Mymind is built to feel like an extension of your subconscious — not a database, not a social feed, and not a rigid folder hierarchy. No vanity metrics, no collaboration stress, no manual organizing required.
+Hivemind is built to feel like an extension of your subconscious — not a database, not a social feed, and not a rigid folder hierarchy. No vanity metrics, no collaboration stress, no manual organizing required.
 
 - **Remember Everything Effortlessly:** Quotes, articles, visual inspiration, design notes, books, and code snippets live in a seamless visual canvas.
 - **Autonomous Contextual Intelligence:** Local heuristic and embedding-ready tag classification with full explainability ("Why this tag?").
@@ -39,9 +39,9 @@ Mymind is built to feel like an extension of your subconscious — not a databas
 - Features keyboard shortcuts (`Space` to cycle, `L` to toggle favorite, `Esc` to close).
 - Delightful celebratory canvas confetti on rediscovering favorite memories.
 
-### 4. 🔍 Grounded AI — "Ask Your Mind"
+### 4. 🔍 Grounded AI — "Ask Your Hivemind"
 - Conversational semantic assistant that answers questions exclusively using your saved library.
-- Provides interactive clickable citation pills that link directly to cards in your mind.
+- Provides interactive clickable citation pills that link directly to cards in your hivemind.
 
 ### 5. 🎨 Spatial Moodboard Canvas
 - Infinite freeform spatial canvas with smooth zooming, panning, and spatial card placement.
@@ -77,7 +77,7 @@ Mymind is built to feel like an extension of your subconscious — not a databas
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd mymind
+cd hivemind
 
 # Install dependencies
 npm install

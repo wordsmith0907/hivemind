@@ -116,7 +116,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       >
         {/* The Signature Pulsating Orange Dot */}
         <div className="mr-3 ml-1 flex items-center justify-center flex-shrink-0">
-          <span className="w-2.5 h-2.5 mymind-pulse-dot" />
+          <span className="w-2.5 h-2.5 hivemind-pulse-dot" />
         </div>
 
         {/* Chained Token Pills Container */}
@@ -165,7 +165,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
               onSetGridFaded(false);
               setTimeout(() => setShowSuggestions(false), 200);
             }}
-            placeholder={pills.length === 0 ? "Search your mind..." : "Add more terms..."}
+            placeholder={pills.length === 0 ? "Search your hivemind..." : "Add more terms..."}
             className="flex-1 min-w-[140px] bg-transparent border-none outline-none text-[14px] text-[#191919] dark:text-[#f0f0ee] placeholder:text-[#9c9994] dark:placeholder:text-[#6e6c68] font-body tracking-tight"
           />
         </div>

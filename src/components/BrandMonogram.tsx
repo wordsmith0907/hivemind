@@ -34,7 +34,7 @@ export const BrandMonogram: React.FC<BrandMonogramProps> = ({
 
       {showWordmark && (
         <span className="font-editorial text-2xl font-medium tracking-tight text-[#191919] dark:text-[#FCFAF7]">
-          mymind
+          hivemind
         </span>
       )}
     </div>

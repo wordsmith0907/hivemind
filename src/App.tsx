@@ -25,7 +25,7 @@ import { MobileBottomDock } from './components/MobileBottomDock';
 const WORKSPACES: Workspace[] = [
   {
     id: 'ws-personal',
-    name: 'My Personal Mind',
+    name: 'My Personal Hivemind',
     slug: 'personal',
     isPersonal: true,
     memberCount: 1,
@@ -46,7 +46,7 @@ const WORKSPACES: Workspace[] = [
 export function App() {
   // Theme state
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    return localStorage.getItem('mymind-theme') === 'dark';
+    return (localStorage.getItem('hivemind-theme') || localStorage.getItem('mymind-theme')) === 'dark';
   });
 
   // Data state
@@ -99,10 +99,10 @@ export function App() {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('mymind-theme', 'dark');
+      localStorage.setItem('hivemind-theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('mymind-theme', 'light');
+      localStorage.setItem('hivemind-theme', 'light');
     }
   }, [darkMode]);
 
@@ -241,19 +241,19 @@ export function App() {
     }
   };
 
-  // Clear Your Mind (Archive stale unpinned cards)
+  // Clear Your Hivemind (Archive stale unpinned cards)
   const handleClearYourMind = () => {
-    if (window.confirm("Clear Your Mind will review old cards. Would you like to enter Serendipity mode to review them?")) {
+    if (window.confirm("Clear Your Hivemind will review older memories. Would you like to enter Serendipity mode to review them?")) {
       setIsSerendipityOpen(true);
     }
   };
 
-  // Export Mind data to JSON & CSV
+  // Export Hivemind data to JSON & CSV
   const handleExportMind = () => {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cards, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `mymind-export-${new Date().toISOString().slice(0, 10)}.json`);
+    downloadAnchor.setAttribute("download", `hivemind-export-${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

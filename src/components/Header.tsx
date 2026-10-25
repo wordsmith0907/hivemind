@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand Monogram */}
         <div 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          title="mymind — Remember everything. Organize nothing."
+          title="hivemind — Remember everything. Organize nothing."
         >
           <BrandMonogram />
         </div>
@@ -137,11 +137,11 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Ask Your Library (AI Grounded Search) */}
         <button
           onClick={onOpenAskLibrary}
-          title="Ask Your Library (AI Grounded RAG)"
+          title="Ask Your Hivemind (AI Grounded RAG)"
           className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full text-[#55524D] dark:text-[#C4C2BE] hover:bg-[#F0EAE1]/70 dark:hover:bg-[#252528] transition-all duration-200"
         >
           <Sparkles className="w-3.5 h-3.5 text-[#FFE926]" />
-          <span className="hidden md:inline">Ask Mind</span>
+          <span className="hidden md:inline">Ask Hivemind</span>
         </button>
 
         {/* Freeform Moodboard Canvas */}
@@ -158,10 +158,10 @@ export const Header: React.FC<HeaderProps> = ({
           <span className="hidden lg:inline">{isCanvasActive ? 'Grid' : 'Canvas'}</span>
         </button>
 
-        {/* Clear Your Mind */}
+        {/* Clear Your Hivemind */}
         <button
           onClick={onClearYourMind}
-          title="Clear Your Mind: Review & Archive Stale Cards"
+          title="Clear Your Hivemind: Review & Archive Stale Cards"
           className="p-2 text-[#706E6B] dark:text-[#8F8D88] hover:text-[#FF5924] hover:bg-[#F0EAE1]/70 dark:hover:bg-[#252528] rounded-full transition-colors"
         >
           <Trash2 className="w-3.5 h-3.5" />

@@ -2,7 +2,7 @@ import { Card } from '../../types/card';
 
 /**
  * High-speed client-side Semantic Vector Engine & Similarity Calculator.
- * Enables Mymind's "Same Vibe" and "|| Semantic Search" without server latency.
+ * Enables Hivemind's "Same Vibe" and "|| Semantic Search" without server latency.
  */
 
 const SEMANTIC_CLUSTERS: Record<string, string[]> = {

@@ -27,7 +27,7 @@ export const AskLibraryDrawer: React.FC<AskLibraryDrawerProps> = ({
     {
       id: 'init-msg',
       sender: 'assistant',
-      text: "Hello! I am your Mind Assistant. Ask me anything about what you've saved—design principles, architecture notes, book ideas, quotes, or color resonance. I synthesize answers grounded strictly in your private library with citations.",
+      text: "Hello! I am your Hivemind Assistant. Ask me anything about what you've saved—design principles, architecture notes, book ideas, quotes, or color resonance. I synthesize answers grounded strictly in your private library with citations.",
     }
   ]);
   const [inputText, setInputText] = useState('');
@@ -73,7 +73,7 @@ export const AskLibraryDrawer: React.FC<AskLibraryDrawerProps> = ({
           .map(c => `• From ${c.title}: ${c.excerpt || c.content.slice(0, 120)}...`)
           .join('\n');
 
-        answer = `Based on your saved memories (${titles}), here is what I found:\n\n${excerpts}\n\nThese thoughts form a cohesive pattern in your mind around ${userQuery.toLowerCase()}.`;
+        answer = `Based on your saved memories (${titles}), here is what I found:\n\n${excerpts}\n\nThese thoughts form a cohesive pattern in your hivemind around ${userQuery.toLowerCase()}.`;
       }
 
       const botMsg: Message = {
@@ -101,7 +101,7 @@ export const AskLibraryDrawer: React.FC<AskLibraryDrawerProps> = ({
           </div>
           <div>
             <h3 className="font-editorial text-lg font-medium text-[#191919] dark:text-[#F5F4F2]">
-              Ask Your Library
+              Ask Your Hivemind
             </h3>
             <span className="text-[11px] font-mono text-[#748297] dark:text-[#A3A19D]">
               Grounded in {cards.length} private cards

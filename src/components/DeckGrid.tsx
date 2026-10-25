@@ -42,7 +42,7 @@ export const DeckGrid: React.FC<DeckGridProps> = ({
           No memories found
         </h3>
         <p className="mt-2 text-sm text-[#748297] dark:text-[#A3A19D] font-body leading-relaxed max-w-sm mx-auto">
-          Nothing in your mind matches this search query or filter. Try a broader term, or remember something new.
+          Nothing in your hivemind matches this search query or filter. Try a broader term, or remember something new.
         </p>
         <button
           onClick={onOpenQuickSave}

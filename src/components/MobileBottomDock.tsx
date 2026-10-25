@@ -51,7 +51,7 @@ export const MobileBottomDock: React.FC<MobileBottomDockProps> = ({
       <button
         onClick={onOpenAskLibrary}
         className="p-2 text-[#706E6B] dark:text-[#A3A19D] hover:text-[#FFE926] active:scale-95 transition-transform"
-        aria-label="Ask Mind"
+        aria-label="Ask Hivemind"
       >
         <Sparkles className="w-5 h-5" />
       </button>

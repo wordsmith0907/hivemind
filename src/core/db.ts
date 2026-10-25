@@ -5,7 +5,7 @@ import { Space } from '../types/space';
 import { Workspace, Comment, ActivityLog } from '../types/workspace';
 import { MindLink } from '../types/mindlink';
 
-export class MymindDatabase extends Dexie {
+export class HivemindDatabase extends Dexie {
   cards!: Table<Card, string>;
   tags!: Table<Tag, string>;
   spaces!: Table<Space, string>;
@@ -15,7 +15,7 @@ export class MymindDatabase extends Dexie {
   mindLinks!: Table<MindLink, string>;
 
   constructor() {
-    super('MymindAppDB');
+    super('HivemindAppDB');
 
     this.version(1).stores({
       cards: 'id, workspaceId, type, domain, isFavorite, isPinned, isArchived, isDeleted, createdAt, updatedAt, *spaceIds, *mindLinks, *tags.name, *colorPalette.colorNames',
@@ -29,4 +29,5 @@ export class MymindDatabase extends Dexie {
   }
 }
 
-export const db = new MymindDatabase();
+export const db = new HivemindDatabase();
+export { HivemindDatabase as MymindDatabase };
